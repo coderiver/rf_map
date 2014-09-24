@@ -20,6 +20,26 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
+.map { width: 954px; margin: 0 auto; padding: 60px 0 120px; }
+.map .map__title { margin-bottom: 20px; font-size: 32px; text-align: center; }
+.map .map__in { position: relative; margin-bottom: 50px; }
+.map .map__in:after { content: ""; position: absolute; left: 45px; bottom: 20px; width: 50px; height: 50px; background: white; z-index: 10; }
+.map .map__hide-yandex { position: absolute; right: 0; bottom: 0; }
+.map .map__hide-yandex:after, .map .map__hide-yandex:before { content: ""; position: absolute; right: 0; background: white; z-index: 10; }
+.map .map__hide-yandex:after { bottom: 0; width: 500px; height: 20px; }
+.map .map__hide-yandex:before { bottom: 20px; width: 100px; height: 40px; }
+.map .title { margin-bottom: 60px; text-align: center; }
+.map .ymaps-b-balloon__sprite.ymaps-b-balloon__sprite_type_tail { display: none; }
+.map .ymaps-b-balloon:after, .map .ymaps-b-balloon:before { content: ""; position: absolute; left: 37px; bottom: -9px; width: 0px; height: 0px; border-style: solid; border-width: 12px 22px 0 0; border-color: white transparent transparent transparent; }
+.map .ymaps-b-balloon:before { left: 36px; bottom: -11px; border-color: #cccccc transparent transparent transparent; }
+
+.baloon { padding: 10px 20px; font-size: 12px; }
+.baloon .baloon__city { margin-bottom: 15px; font-size: 18px; }
+.baloon .baloon__contacts { margin-bottom: 15px; font-weight: 300; }
+.baloon .baloon__contacts span { font-weight: 400; }
+.baloon .baloon__phone { margin-bottom: 15px; }
+.baloon .baloon__mail { font-weight: 300; font-style: italic; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
